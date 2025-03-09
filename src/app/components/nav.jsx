@@ -18,7 +18,7 @@ const Nav = () => {
                     transform: "translateY(-35%)"
                 },
             ],{
-                duration: 1500,
+                duration: 1200,
                 easing: "cubic-bezier(0.87, 0, 0.13, 1)",
                 fill: "forwards",
                 pseudoElement: "::view-transition-old(root)",
@@ -83,6 +83,19 @@ const Nav = () => {
 
                     href="/contact">
                         Contact</a>
+                </div>
+                <div className="link">
+                <a 
+                    
+                    onClick={(e) => {
+                        e.preventDefault();
+                        router.push("/gallery", {
+                            onTransitionReady: slideInOut,
+                        });
+                    }}
+
+                    href="/gallery">
+                        Gallery</a>
                 </div>
             </div>
         </nav>

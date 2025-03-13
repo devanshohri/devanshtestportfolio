@@ -1,5 +1,6 @@
 "use client";
 import { useTransitionRouter } from "next-view-transitions";
+import LocalTime from "./localtime";
 
 
 const Nav = () => {
@@ -44,7 +45,7 @@ const Nav = () => {
 
     return(
         <nav className="nav">
-            <div className="links">
+            <div className="nav-logo">
                 <div className="link">
                     <a 
                     
@@ -56,21 +57,24 @@ const Nav = () => {
                     }}
 
                     href="/">
-                        Work</a>
+                        [ Devansh Ohri ]</a>
                 </div>
+            </div>
+            <div className="nav-links">
                 <div className="link">
-                <a 
+                    <a 
                     
                     onClick={(e) => {
                         e.preventDefault();
-                        router.push("/about", {
+                        router.push("/work", {
                             onTransitionReady: slideInOut,
                         });
                     }}
 
-                    href="/about">
-                        About</a>
+                    href="/">
+                        Work</a>
                 </div>
+                
                 <div className="link">
                 <a 
                     
@@ -97,6 +101,9 @@ const Nav = () => {
                     href="/gallery">
                         Gallery</a>
                 </div>
+            </div>
+            <div className="nav-local">
+                <a>[ Helsinki, FI &nbsp; <LocalTime /> ]</a>
             </div>
         </nav>
     );

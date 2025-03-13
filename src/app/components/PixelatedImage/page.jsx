@@ -85,6 +85,7 @@ const PixelatedImage = ({
   };
 
   useEffect(() => {
+
     const image = new Image();
     image.src = src;
     image.crossOrigin = "Anonymous";
@@ -100,7 +101,7 @@ const PixelatedImage = ({
     if (inView && imgRef.current && imageLoaded && !animationComplete) {
       setTimeout(() => {
         animatePixelation(imgRef.current, initialPixelation);
-      }, 1000); // Delay in milliseconds (2000ms = 2 seconds)
+      }, 600); // Delay in milliseconds (2000ms = 2 seconds)
     }
   }, [inView, imageLoaded, initialPixelation]);
   

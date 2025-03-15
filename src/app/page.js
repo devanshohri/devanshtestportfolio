@@ -1,9 +1,22 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import PixelatedImage from "./components/PixelatedImage/page";
+import ContactLinks from "./components/contactlinks";
+import ReactLenis from "@studio-freight/react-lenis";
+import { useRef } from "react";
+
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import SplitType from "split-type";
+
+gsap.registerPlugin(useGSAP);
 
 export default function Home() {
+
   return (
+    <ReactLenis root>
   <div className= "hero-wrapper">
     <div className="hero-container" id="hero">
       <div className="hero-top">
@@ -41,18 +54,12 @@ export default function Home() {
       </div>
       <div className="info">
         <h2>[ Contact ]</h2>
-        <div className="info-text">
-          <ul>
-            <li><p>Email</p></li>
-            <li><p>LinkedIn</p></li>
-            <li><p>Instagram</p></li>
-          </ul>
-        </div>
+        <ContactLinks />
       </div>
       <div className="info">
         <h2>[ Documents ]</h2>
         <div className="info-text">
-          <p>CV</p>
+          <a href="/Devansh_Ohri_CV.pdf" target="_blank"><p>CV</p></a>
         </div>
       </div>
     </div>
@@ -204,5 +211,6 @@ export default function Home() {
       </h1>
     </div>
   </div>
+  </ReactLenis>
 );
 }

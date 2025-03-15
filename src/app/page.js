@@ -59,54 +59,143 @@ export default function Home() {
     <div className="work-wrapper" id="work">
       <h1>[ Selected Work ]</h1>
       <div className="work-container">
-      <div className="work">
-        <div className="work-info">
-          <div className="work-title">
-            <h2>[ 01 ]</h2>
-            <h1>Hexabot- UX Challenge</h1>
+        <div className="work">
+          <div className="work-info">
+            <div className="work-title">
+              <h2>[ 01 ]</h2>
+              <h1>Interactive Darts Bar- Website Redesign</h1>
+            </div>
+            <div className="work-desc">
+            <ul>
+              <li><p>UX/UI Design</p></li>
+              <li><p>Visual Direction</p></li>
+              <li><p>Branding</p></li>
+              <li><p>Webflow Development</p></li>
+            </ul>
+            </div>
+            <button className="work-view-btn">
+              <p>VIEW PROJECT →</p>
+            </button>
           </div>
-          <div className="work-desc">
-          <ul>
-            <li><p>UX/UI Design</p></li>
-            <li><p>Visual Direction</p></li>
-            <li><p>Branding</p></li>
-            <li><p>Interaction Design</p></li>
-          </ul>
+          <div className="work-image">
+            <img src="/Flyers1.png" alt="" />
           </div>
-          <button className="work-view-btn">
-            <p>VIEW PROJECT →</p>
-          </button>
         </div>
-        <div className="work-image">
-          <img src="/Screen.png" alt="" />
-        </div>
-      </div>
 
-      <div className="work">
-        <div className="work-info">
-          <div className="work-title">
-            <h2>[ 02 ]</h2>
-            <h1>Hexabot- UX Challenge</h1>
+        <div className="work">
+          <div className="work-info">
+            <div className="work-title">
+              <h2>[ 02 ]</h2>
+              <h1>Hexabot- UX Challenge</h1>
+            </div>
+            <div className="work-desc">
+            <ul>
+              <li><p>UX/UI Design</p></li>
+              <li><p>Visual Direction</p></li>
+              <li><p>Branding</p></li>
+              <li><p>Interaction Design</p></li>
+            </ul>
+            </div>
+            <button className="work-view-btn">
+              <p>VIEW PROJECT →</p>
+            </button>
           </div>
-          <div className="work-desc">
-          <ul>
-            <li><p>UX/UI Design</p></li>
-            <li><p>Visual Direction</p></li>
-            <li><p>Branding</p></li>
-            <li><p>Interaction Design</p></li>
-          </ul>
+          <div className="work-image">
+            <img src="/Screen.png" alt="" />
           </div>
-          <button className="work-view-btn">
-            <p>VIEW PROJECT →</p>
-          </button>
         </div>
-        <div className="work-image">
-          <img src="/Screen.png" alt="" />
+
+        <div className="work">
+          <div className="work-info">
+            <div className="work-title">
+              <h2>[ 03 ]</h2>
+              <h1>Furniture App- UX Challenge</h1>
+            </div>
+            <div className="work-desc">
+            <ul>
+              <li><p>UX/UI Design</p></li>
+              <li><p>Visual Direction</p></li>
+              <li><p>Interaction Design</p></li>
+            </ul>
+            </div>
+            <button className="work-view-btn">
+              <p>VIEW PROJECT →</p>
+            </button>
+          </div>
+          <div className="work-image">
+            <img src="/Furniture.png" alt="" />
+          </div>
         </div>
+
+        <div className="work">
+          <div className="work-info">
+            <div className="work-title">
+              <h2>[ 04 ]</h2>
+              <h1>Yle Pienet Koneet- Title Animation</h1>
+            </div>
+            <div className="work-desc">
+            <ul>
+              <li><p>Motion Design</p></li>
+              <li><p>Visual Direction</p></li>
+              <li><p>Branding</p></li>
+            </ul>
+            </div>
+            <button className="work-view-btn">
+              <p>VIEW PROJECT →</p>
+            </button>
+          </div>
+          <div className="work-image">
+            <img src="/PienetKoneet.jpeg" alt="" />
+          </div>
         </div>
+
+        <div className="work">
+          <div className="work-info">
+            <div className="work-title">
+              <h2>[ 05 ]</h2>
+              <h1>Bluuman- Promo Video</h1>
+            </div>
+            <div className="work-desc">
+            <ul>
+              <li><p>Motion Design</p></li>
+              <li><p>Visual Direction</p></li>
+              <li><p>Branding</p></li>
+            </ul>
+            </div>
+            <button className="work-view-btn">
+              <p>VIEW PROJECT →</p>
+            </button>
+          </div>
+          <div className="work-image">
+            <img src="/Bluuman.png" alt="" />
+          </div>
+        </div>
+
+        <div className="work">
+          <div className="work-info">
+            <div className="work-title">
+              <h2>[ 05 ]</h2>
+              <h1>Illvzn x OTB- Promo Video</h1>
+            </div>
+            <div className="work-desc">
+            <ul>
+              <li><p>Motion Design</p></li>
+              <li><p>Visual Direction</p></li>
+              <li><p>Branding</p></li>
+            </ul>
+            </div>
+            <button className="work-view-btn">
+              <p>VIEW PROJECT →</p>
+            </button>
+          </div>
+          <div className="work-image">
+            <img src="/Illvzn.png" alt="" />
+          </div>
+        </div>
+
       </div>
-      
     </div>
+
     <div className="text-block">
       <h1>
         No Gimmicks, <br />

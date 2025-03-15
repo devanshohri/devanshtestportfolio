@@ -17,10 +17,10 @@ const Nav = () => {
                 </div>
                 
                 <div className="link">
-                <a href="/contact"> Contact</a>
+                <a href="#contact"> Contact</a>
                 </div>
                 <div className="link">
-                <a href="/gallery"> Gallery</a>
+                <a href="#gallery"> Gallery</a>
                 </div>
             </div>
             <div className="nav-local">

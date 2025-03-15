@@ -198,14 +198,28 @@ ul{
     padding: 1.75rem;
   }
 
-  .work-container{
+  .work-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 1rem;
-    grid-row-gap: 2rem;
+    gap: 1rem;
     padding-top: 1rem;
-  }
+    grid-template-areas: 
+        "work1 ."
+        ". work2"
+        "work3 ."
+        ". work4"
+        "work5 ."
+        ". work6";
+}
+
+.work:nth-child(1) { grid-area: work1; }
+.work:nth-child(2) { grid-area: work2; }
+.work:nth-child(3) { grid-area: work3; }
+.work:nth-child(4) { grid-area: work4; }
+.work:nth-child(5) { grid-area: work5; }
+.work:nth-child(6) { grid-area: work6; }
+
 
   .work {
     display: grid;
@@ -226,14 +240,6 @@ ul{
     justify-content: space-between;
   }
 
-  .work-desc {
-
-  }
-
-  .work-view-btn{
-
-  }
-
   .work-view-btn p{
     font-family: 'Neue Montreal Bold';
     color: var(--page-text-2);
@@ -241,14 +247,10 @@ ul{
     
   }
 
-  .work-image {
-    height: 35vh;
-  }
 
   .work-image img{
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    height: 100%;
     object-position: 50% 0%;
   }
 

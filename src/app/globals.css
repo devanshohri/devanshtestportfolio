@@ -38,6 +38,10 @@ img{
     object-fit: cover;
 }
 
+button {
+    all: unset;
+}
+
 a{
     text-decoration: none;
 }
@@ -87,7 +91,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    z-index: 5;
     font-size: 1rem;
     text-transform: uppercase;
     font-family: 'Neue Montreal Bold';
@@ -187,11 +191,65 @@ ul{
     max-width: 25vw;
   }
 
-  .faq-container{
+  .work-wrapper{
     position: relative;
     width: 100vw;
     height: 100%;
     padding: 1.75rem;
+  }
+
+  .work-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+    padding-top: 1rem;
+  }
+
+  .work {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: auto;
+    padding: 0.5rem;
+    border: 2px solid var(--page-text-2);
+    border-radius: 0.25rem;
+  }
+
+  .work-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .work-desc {
+
+  }
+
+  .work-view-btn{
+
+  }
+
+  .work-view-btn p{
+    font-family: 'Neue Montreal Bold';
+    color: var(--page-text-2);
+    mix-blend-mode: exclusion;
+    
+  }
+
+  .work-image {
+    height: 35vh;
+  }
+
+  .work-image img{
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    height: 100%;
+    object-position: 50% 0%;
   }
 
   .faq-question {

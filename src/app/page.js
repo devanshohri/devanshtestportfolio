@@ -5,7 +5,7 @@ import PixelatedImage from "./components/PixelatedImage/page";
 export default function Home() {
   return (
   <div className= "hero-wrapper">
-    <div className="hero-container">
+    <div className="hero-container" id="hero">
       <div className="hero-top">
         <h1>I’m Devansh— a designer based in Helsinki.</h1>
       </div>
@@ -56,24 +56,56 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="faq-container">
-      <h2>[ Get to know me ]</h2>
-      <div className="faq">
-        <div className="faq-question"><h3>01 What is my favourite color?</h3></div>
-        <div className="faq-answer"></div>
+    <div className="work-wrapper" id="work">
+      <h1>[ Selected Work ]</h1>
+      <div className="work-container">
+      <div className="work">
+        <div className="work-info">
+          <div className="work-title">
+            <h2>[ 01 ]</h2>
+            <h1>Hexabot- UX Challenge</h1>
+          </div>
+          <div className="work-desc">
+          <ul>
+            <li><p>UX/UI Design</p></li>
+            <li><p>Visual Direction</p></li>
+            <li><p>Branding</p></li>
+            <li><p>Interaction Design</p></li>
+          </ul>
+          </div>
+          <button className="work-view-btn">
+            <p>VIEW PROJECT →</p>
+          </button>
         </div>
-      <div className="faq">
-        <div className="faq-question"><h3>02 Where am I from?</h3></div>
-        <div className="faq-answer"></div>
+        <div className="work-image">
+          <img src="/Screen.png" alt="" />
         </div>
-      <div className="faq">
-        <div className="faq-question"><h3>03 What else do I except design?</h3></div>
-        <div className="faq-answer"></div>
+      </div>
+
+      <div className="work">
+        <div className="work-info">
+          <div className="work-title">
+            <h2>[ 02 ]</h2>
+            <h1>Hexabot- UX Challenge</h1>
+          </div>
+          <div className="work-desc">
+          <ul>
+            <li><p>UX/UI Design</p></li>
+            <li><p>Visual Direction</p></li>
+            <li><p>Branding</p></li>
+            <li><p>Interaction Design</p></li>
+          </ul>
+          </div>
+          <button className="work-view-btn">
+            <p>VIEW PROJECT →</p>
+          </button>
         </div>
-      <div className="faq">
-        <div className="faq-question"><h3>04 What tools do I use? </h3></div>
-        <div className="faq-answer"></div>
+        <div className="work-image">
+          <img src="/Screen.png" alt="" />
         </div>
+        </div>
+      </div>
+      
     </div>
     <div className="text-block">
       <h1>

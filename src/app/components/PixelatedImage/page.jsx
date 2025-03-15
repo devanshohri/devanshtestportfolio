@@ -101,7 +101,7 @@ const PixelatedImage = ({
     if (inView && imgRef.current && imageLoaded && !animationComplete) {
       setTimeout(() => {
         animatePixelation(imgRef.current, initialPixelation);
-      }, 600); // Delay in milliseconds (2000ms = 2 seconds)
+      }, 100); // Delay in milliseconds (2000ms = 2 seconds)
     }
   }, [inView, imageLoaded, initialPixelation]);
   

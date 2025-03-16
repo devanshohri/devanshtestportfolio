@@ -5,19 +5,83 @@ import styles from "./page.module.css";
 import PixelatedImage from "./components/PixelatedImage/page";
 import ContactLinks from "./components/contactlinks";
 import ReactLenis from "@studio-freight/react-lenis";
-import { useRef } from "react";
 
-import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
+import { useRef, useEffect } from "react";
 
 gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
 
+  const container = useRef(null);
+
+  useGSAP(() => {
+    // HERO & INFO HEADINGS (H2) ANIMATE TOGETHER ON LOAD
+    gsap.from([".hero-top h1", ".hero-bottom h1", ".info h2"], {
+      y: 50, // Only move down without opacity change
+      duration: 1.2,
+      stagger: 0.2,
+      ease: "power3.out",
+    });
+
+    // INFO-TEXT (Now Animates Separately)
+    gsap.utils.toArray(".info-text").forEach((text) => {
+      gsap.from(text, {
+        opacity: 0, // Text will fade in smoothly
+        y: 30,
+        duration: 1,
+        scrollTrigger: {
+          trigger: text,
+          start: "top 85%",
+          toggleActions: "play none none reverse",
+        },
+      });
+    });
+
+    // WORK SECTION ANIMATION (Smooth & No Opacity Flickering)
+    gsap.utils.toArray(".work").forEach((work, i) => {
+      gsap.fromTo(
+        work,
+        { y: 50 },
+        {
+          y: 0,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: work,
+            start: "top 85%",
+            end: "bottom 60%",
+            toggleActions: "play none none reverse",
+            scrub: 0.5,
+          },
+        }
+      );
+    });
+
+    // WORK IMAGES REVEAL EFFECT
+    gsap.utils.toArray(".work-image img").forEach((img) => {
+      gsap.from(img, {
+        opacity: 0,
+        scale: 1.1,
+        duration: 1.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: img,
+          start: "top 85%",
+          toggleActions: "play none none reverse",
+        },
+      });
+    });
+
+  }, [container]);
+
   return (
     <ReactLenis root>
-  <div className= "hero-wrapper">
+  <div className= "hero-wrapper" ref={container}>
     <div className="hero-container" id="hero">
       <div className="hero-top">
         <h1>I’m Devansh— a designer based in Helsinki.</h1>
@@ -181,7 +245,7 @@ export default function Home() {
         <div className="work">
           <div className="work-info">
             <div className="work-title">
-              <h2>[ 05 ]</h2>
+              <h2>[ 06 ]</h2>
               <h1>Illvzn x OTB- Promo Video</h1>
             </div>
             <div className="work-desc">

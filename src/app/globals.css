@@ -6,6 +6,8 @@
     --black-1: #080808;
     --black-1-t: rgba(8, 8, 8, 0.65);
 
+    --grey-1: rgba(94, 94, 94, 1);
+
     --page-bg: var(--white);
     --page-text: var(--white-1);
     --page-text-2: var(--white-1-t);
@@ -247,11 +249,21 @@ ul{
     justify-content: space-between;
   }
 
+  .work-title h2{
+    color: var(--grey-1);
+  }
+
+  .work-title h1{
+    color: var(--black-1);
+  }
+
+  .work-desc p{
+    color: var(--black-1);
+  }
+
   .work-view-btn p{
     font-family: 'Neue Montreal Bold';
-    color: var(--page-text-2);
-    mix-blend-mode: exclusion;
-    
+    color: var(--grey-1);
   }
 
 

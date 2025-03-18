@@ -1,8 +1,6 @@
 import "./globals.css";
 import { ViewTransitions } from "next-view-transitions";
 
-import ReactLenis from "@studio-freight/react-lenis";
-
 import Nav from "./components/nav";
 import Footer from "./components/footer";
 

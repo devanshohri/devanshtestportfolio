@@ -108,6 +108,7 @@ const Work = () => {
                     autoPlay={false}
                     loop={true}
                     playing
+                    playsinline
                     muted
                     width="100%"
                     height="100%"
@@ -185,6 +186,7 @@ const Work = () => {
                     autoPlay={false}
                     loop={true}
                     playing
+                    playsinline
                     muted
                     width="100%"
                     height="100%"
@@ -217,6 +219,7 @@ const Work = () => {
                         autoPlay={false}
                         loop={true}
                         playing
+                        playsinline
                         muted
                         width="100%"
                         height="100%"
@@ -249,6 +252,7 @@ const Work = () => {
                         autoPlay={false}
                         loop={true}
                         playing
+                        playsinline
                         muted
                         width="100%"
                         height="100%"

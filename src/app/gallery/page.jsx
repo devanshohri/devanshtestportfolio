@@ -72,6 +72,7 @@ const Gallery = () => {
                                 autoPlay={false}
                                 loop={true}
                                 playing
+                                playsinline
                                 muted
                                 width="100%"
                                 height="100%"
@@ -87,17 +88,9 @@ const Gallery = () => {
 {selectedMedia && (
     <div className="lightbox-overlay" onClick={closeLightbox}>
         <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
-            {selectedMedia.type === "image" ? (
+            {selectedMedia.type === "image"}(
                 <img src={selectedMedia.src} alt="Expanded view" />
-            ) : (
-                <ReactPlayer 
-                    url={selectedMedia.src}
-                    controls
-                    playing
-                    width="100%"
-                    height="auto"
-                />
-            )}
+            );
         </div>
     </div>
 )}

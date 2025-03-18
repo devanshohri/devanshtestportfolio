@@ -13,6 +13,7 @@
   left: 0;
   object-fit: cover;
   object-position: 50% 10%;
+  filter: saturate(1) brightness(1.1);
 }
 .image_container img {
   z-index: 0;

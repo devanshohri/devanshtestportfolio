@@ -48,7 +48,7 @@ const About = () => {
             <h2>[ About ]</h2>
             <p>
               I’m Devansh— a designer based in Helsinki. <br /><br />
-              A creative obsessed with clarity, function, and finesse. I craft clear, functional, and refined experiences across Analog and Digital.
+              A creative obsessed with clarity, function, and finesse. I craft clear, functional, and refined experiences across analog and digital mediums.
             </p>
           </div>
         </div>

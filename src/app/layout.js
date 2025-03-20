@@ -1,6 +1,8 @@
 import "./globals.css";
 import { ViewTransitions } from "next-view-transitions";
 
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 import Nav from "./components/nav";
 import Footer from "./components/footer";
 
@@ -18,6 +20,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-SD4DZBV7VW" />
     </html>
     </ViewTransitions>
   );

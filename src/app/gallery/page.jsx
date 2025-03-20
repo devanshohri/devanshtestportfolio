@@ -35,12 +35,13 @@ const Gallery = () => {
         { type: "image", src: "/media/tff.webp", aspectRatio: "portrait" },
         { type: "image", src: "/media/porsche.webp", aspectRatio: "wide" },
         { type: "image", src: "/media/ekencards.webp", aspectRatio: "square" },
-        { type: "image", src: "/media/turt.webp", aspectRatio: "square" },
-        { type: "video", src: "https://vimeo.com/1067135693", aspectRatio: "portait" },
+        { type: "video", src: "https://vimeo.com/1067135693", aspectRatio: "portrait" },
         { type: "image", src: "/media/poster01.webp", aspectRatio: "portrait" },
+        { type: "image", src: "/media/mcl.webp", aspectRatio: "square" },
+        { type: "image", src: "/media/walkman.webp", aspectRatio: "portrait" },
         { type: "video", src: "https://vimeo.com/1067120101", aspectRatio: "square" },
         { type: "image", src: "/media/rr.webp", aspectRatio: "square" },
-        { type: "image", src: "/media/mcl.webp", aspectRatio: "square" },
+        { type: "image", src: "/media/turt.webp", aspectRatio: "portrait" },
     ];
 
     useGSAP(() => {
@@ -66,6 +67,7 @@ const Gallery = () => {
                             {item.type === "image" ? (
                                 <img src={item.src} alt={`Gallery item ${index}`} />
                             ) : (
+                                <div className="gallery-video-wrapper">
                                 <ReactPlayer 
                                 url={item.src}
                                 controls={false}
@@ -76,8 +78,9 @@ const Gallery = () => {
                                 muted
                                 width="100%"
                                 height="100%"
-                                
+                                style={{ pointerEvents: 'none' }}
                             />
+                            </div>
                             )}
                         </div>
                     ))}
@@ -87,7 +90,7 @@ const Gallery = () => {
             {/* Lightbox Overlay */}
 {selectedMedia && (
     <div className="lightbox-overlay" onClick={closeLightbox}>
-        <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+        <div className="lightbox-content">
             {selectedMedia.type === "image"}(
                 <img src={selectedMedia.src} alt="Expanded view" />
             );

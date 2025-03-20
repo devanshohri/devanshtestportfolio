@@ -47,7 +47,7 @@ const About = () => {
           <div className="hero-text">
             <h2>[ About ]</h2>
             <p>
-              I’m Devansh— a designer based in Helsinki. <br /><br />
+              I’m Devansh— a designer based in Finland. <br /><br />
               A creative obsessed with clarity, function, and finesse. I craft clear, functional, and refined experiences across analog and digital mediums.
             </p>
           </div>

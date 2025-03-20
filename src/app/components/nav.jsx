@@ -3,6 +3,7 @@ import LocalTime from "./localtime";
 import { useTransitionRouter } from "next-view-transitions";
 import { usePathname } from "next/navigation";
 
+
 const Nav = () => {
     const router = useTransitionRouter();
     const pathname = usePathname(); // Get current route

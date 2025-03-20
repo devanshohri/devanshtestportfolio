@@ -151,5 +151,8 @@
   text-align: center;
   height: 30vh;
   width: auto;
-  padding: 1.75rem;
+  padding-right: 1.75rem;
+  padding-left: 1.75rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }

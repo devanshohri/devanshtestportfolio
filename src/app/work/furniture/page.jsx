@@ -54,7 +54,7 @@ const Furniture = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-block">
+            <div className="project-ux-chal">
                 <h2>[ UX Challenges ]</h2>
                 <ul>
                     <li><h1>01 Customer Retention and Engagement</h1></li>

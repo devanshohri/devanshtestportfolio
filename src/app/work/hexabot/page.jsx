@@ -49,12 +49,12 @@ const Hexabot = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-block">
+            <div className="project-ux-chal">
                 <h2>[ UX Challenges ]</h2>
                 <ul>
-                    <li><h1><span style={{ color: '#F54703' }}>7-10</span> times daily, Users check updates</h1></li>
-                    <li><h1><span style={{ color: '#F54703' }}>65%</span> of tasks are urgent, requiring a fast, stress-free assignment process.</h1></li>
-                    <li><h1><span style={{ color: '#F54703' }}>Complex Environments: </span>UI must be usable with gloves, fogged helmets, or limited dexterity.</h1></li>
+                    <li><h1><span style={{ color: '#F54703' }}>7-10</span> times daily, Users check updates</h1></li><br />
+                    <li><h1><span style={{ color: '#F54703' }}>65%</span> of tasks are urgent, requiring a fast, stress-free assignment process.</h1></li><br />
+                    <li><h1><span style={{ color: '#F54703' }}>Complex Environments: </span>UI must be usable with gloves, fogged helmets, or limited dexterity.</h1></li><br />
                 </ul>
             </div>
             <div className="project-case-mix">

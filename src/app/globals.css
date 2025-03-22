@@ -145,7 +145,7 @@ ul{
         order: 2;
         flex-direction: row;
         align-items: center;
-        gap: 1rem;
+        gap: 3rem;
         margin-top: 1rem;
     }
 
@@ -456,6 +456,7 @@ ul{
     height: 100%;
     max-height: 40vh;
     object-fit: contain;
+    pointer-events: none;
 }
 
 .work-info {
@@ -509,6 +510,12 @@ ul{
 
     .work-info {
         display: none;
+    }
+
+    .work-image > div{
+        position: relative;
+        transform: scale(1.5);
+        object-fit: contain;
     }
 
     

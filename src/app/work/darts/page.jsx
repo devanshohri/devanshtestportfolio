@@ -9,6 +9,7 @@ import ReactLenis from "@studio-freight/react-lenis";
 const ReactPlayer = dynamic(() => import("react-player"), {ssr: false});
 
 const DartsBar = () => {
+    
 
     const [isClient, setIsClient] = useState(false);
     const container = useRef(null);

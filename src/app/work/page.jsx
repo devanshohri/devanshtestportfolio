@@ -129,7 +129,7 @@ const Work = () => {
               href="/work/hexabot" className="work-link">
                 <div className="work-info">
                   <div className="work-title">
-                    <h2>[ 02 ]</h2>
+                    <h2>[ 01 ]</h2>
                     <h1>Hexabot- UX Challenge</h1>
                   </div>
                   <div className="work-desc">
@@ -159,7 +159,7 @@ const Work = () => {
               href="/work/furniture" className="work-link">
                 <div className="work-info">
                   <div className="work-title">
-                    <h2>[ 03 ]</h2>
+                    <h2>[ 02 ]</h2>
                     <h1>Furniture App- UX Challenge</h1>
                   </div>
                   <div className="work-desc">
@@ -188,7 +188,7 @@ const Work = () => {
               href="/work/pienetkoneet" className="work-link">
                   <div className="work-info">
                       <div className="work-title">
-                          <h2>[ 04 ]</h2>
+                          <h2>[ 03 ]</h2>
                           <h1>Yle Pienet Koneet - Title Animation</h1>
                       </div>
                       <div className="work-desc">
@@ -228,7 +228,7 @@ const Work = () => {
               href="/work/blumaan" className="work-link">
                 <div className="work-info">
                   <div className="work-title">
-                    <h2>[ 05 ]</h2>
+                    <h2>[ 04 ]</h2>
                     <h1>Blumaan- Promo Video</h1>
                   </div>
                   <div className="work-desc">
@@ -268,7 +268,7 @@ const Work = () => {
               href="/work/illvzn" className="work-link">
                 <div className="work-info">
                   <div className="work-title">
-                    <h2>[ 06 ]</h2>
+                    <h2>[ 05 ]</h2>
                     <h1>Illvzn x OTB- Promo Video</h1>
                   </div>
                   <div className="work-desc">
@@ -308,7 +308,7 @@ const Work = () => {
             href="/work/flyers" className="work-link">
             <div className="work-info">
               <div className="work-title">
-                <h2>[ 01 ]</h2>
+                <h2>[ 06 ]</h2>
                 <h1>Interactive Darts Bar- Website Redesign</h1>
               </div>
               <div className="work-desc">

@@ -4,6 +4,7 @@ import styles from "../style.project.css"
 import ReactLenis from "@studio-freight/react-lenis";
 
 const Furniture = () => {
+    
     return (
         <ReactLenis root>
     <div className="project-container">

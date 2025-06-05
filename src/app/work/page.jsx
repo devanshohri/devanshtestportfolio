@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useTransitionRouter } from "next-view-transitions";
 import { usePathname } from "next/navigation";
 
@@ -145,7 +146,13 @@ const Work = () => {
                   </button>
                 </div>
                 <div className="work-image">
-                  <img src="/media/hexabot/hexabot1.webp" alt="" />
+                  <Image
+                    src="/media/hexabot/hexabot1.webp" 
+                    alt="" 
+                    width={1500}
+                    height={1000}
+                    priority={false}
+                    />
                 </div>
                 </a>
               </div>
@@ -174,7 +181,13 @@ const Work = () => {
                   </button>
                 </div>
                 <div className="work-image">
-                  <img src="/media/furniture/furn1.webp" alt="" />
+                  <Image
+                  src="/media/furniture/furn1.webp" 
+                  alt="" 
+                  width={1500}
+                  height={1000}
+                  priority={false}
+                  />
                 </div>
                 </a>
               </div>

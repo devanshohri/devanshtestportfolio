@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "../style.project.css"
+import Image from "next/image";
 import ReactLenis from "@studio-freight/react-lenis";
 
 const Furniture = () => {
@@ -18,7 +19,13 @@ const Furniture = () => {
             </div>
         </div>
         <div className="project-hero-img">
-            <img src="../media/furniture/furn1.webp" alt="" />
+            <Image 
+                src="/media/furniture/furn1.webp" 
+                alt="" 
+                width={1500}
+                height={1000}
+                priority={false}
+                />
         </div>
         <div className="project-main">
             <div className="project-main-info">

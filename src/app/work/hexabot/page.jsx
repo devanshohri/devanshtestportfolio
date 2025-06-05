@@ -2,6 +2,7 @@
 
 import styles from "../style.project.css"
 import ReactLenis from "@studio-freight/react-lenis";
+import Image from "next/image";
 
 const Hexabot = () => {
     return(
@@ -17,7 +18,14 @@ const Hexabot = () => {
             </div>
         </div>
         <div className="project-hero-img">
-            <img src="../media/hexabot/hexabot3.webp" alt="" />
+            
+            <Image
+                src="/media/hexabot/hexabot3.webp"
+                alt="Hexabot UI "
+                width={1500}
+                height={1000}
+                priority={false} // Lazy loads the image by default
+            />
         </div>
         <div className="project-main">
             <div className="project-main-info">
@@ -82,7 +90,14 @@ const Hexabot = () => {
                     </ul>
                 </div>
                 <div className="project-case-mix-img" >
-                    <img src="../media/hexabot/hexabot2.webp" alt="" style={{ maxHeight: '40vh', width:'100%'}}/>
+                    <Image
+                        src="/media/hexabot/hexabot2.webp" 
+                        alt="" 
+                        style={{ maxHeight: '40vh', width:'100%'}}
+                        width={1500}
+                        height={1000}
+                        priority={false}
+                    />
                 </div>
             </div>
             <div className="project-case-mix">

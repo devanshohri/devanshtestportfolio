@@ -148,7 +148,7 @@ const Work = () => {
                 <div className="work-image">
                   <Image
                     src="/media/hexabot/hexabot1.webp" 
-                    alt="" 
+                    alt="hexabot hero ui" 
                     width={1500}
                     height={1000}
                     priority={false}
@@ -183,7 +183,7 @@ const Work = () => {
                 <div className="work-image">
                   <Image
                   src="/media/furniture/furn1.webp" 
-                  alt="" 
+                  alt="furniture ui hero" 
                   width={1500}
                   height={1000}
                   priority={false}

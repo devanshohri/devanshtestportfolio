@@ -68,7 +68,7 @@ const Nav = () => {
                 {getNavLink("/gallery", "Gallery")}
             </div>
             <div className="nav-local">
-                <a>[ Helsinki, FI &nbsp; <LocalTime /> ]</a>
+                <p>[ Helsinki, FI &nbsp; <LocalTime /> ]</p>
             </div>
         </nav>
     );

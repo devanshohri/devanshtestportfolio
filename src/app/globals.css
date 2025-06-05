@@ -116,6 +116,13 @@ ul{
     color: var(--white-1-t);
 }
 
+.nav-local p {
+    color: var(--white-1-t);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'SBB Bold Condensed';
+    mix-blend-mode: exclusion;
+}
 
 .nav-links {
     display: flex;

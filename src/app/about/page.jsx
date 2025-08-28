@@ -71,7 +71,7 @@ const About = () => {
           <div className="info">
             <h2>[ Currently ]</h2>
             <div className="info-text">
-              <p>Studying Media & Arts at Tampere University of Applied Sciences</p>
+              <p>Building a Brand Identity and Website for Kukkiva Taide </p>
             </div>
           </div>
 
